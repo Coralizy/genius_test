@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .box {
-    
+    display: inline-block;
     width: 100px;
     height: 100px;
     background-color: aqua;
@@ -10,4 +10,7 @@
     border: 5px solid crimson;
     margin: 0 auto;
     
+}
+.box:last-child {
+    background-color: gold;
 }
