@@ -1,4 +1,5 @@
 /* base */
+
 :root {
   --color-primery-dark: #31261a;
   --color-primery-light: #faf4ea;
@@ -27,6 +28,8 @@ h3 {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -54,7 +57,9 @@ p {
   margin: 0 auto;
   padding: 0 24px;
 }
+
 /* button*/
+
 .button {
   padding: 16px 32px;
   background-color: var(--color-brand);
@@ -68,16 +73,38 @@ p {
   background-color: transparent;
   color: var(--color-brand-dark);
 }
+
 /*link*/
+
 .link {
   color: var(--color-primery-light);
   text-decoration: none;
 }
 .link:hover {
   color: var(--color-brand);
-  font-weight: 600;
+}
+
+/*header*/
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 /*hero section*/
+
 .hero-section {
   padding: 272px 0;
 }
@@ -90,10 +117,16 @@ p {
 .hero-title .accent {
   color: var(--color-brand);
 }
+
 /* advantage section*/
-.advantages-list {
+.advantages-section {
   background-color: var(--color-brand);
-  color: var(--color-primery-light);
+  padding: 16px 0;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 .section-title .accent {
   color: var(--color-brand);
@@ -105,11 +138,21 @@ p {
 .advantages-item {
   font-size: 20px;
   font-weight: 300;
+  color: var(--color-primery-light);
 }
+
 /* tradition section*/
 
 .tradition-section {
   padding-top: 96px;
+}
+.tradition-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.tradition-content {
+  max-width: 710px;
 }
 .tradition-title {
   margin-bottom: 42px;
@@ -121,8 +164,12 @@ p {
   color: var(--color-brand);
   font-weight: 600;
 }
+.tradition-text.limited {
+  max-width: 340px;
+}
 
 /* cookers-section*/
+
 .cookers-title {
   font-weight: 600;
   margin-bottom: 16px;
@@ -130,7 +177,9 @@ p {
 .chefs-title {
   margin-bottom: 80px;
 }
+
 /* format-section */
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -142,12 +191,15 @@ p {
   font-size: 14px;
   font-weight: 300;
 }
+
 /* contact-section*/
+
 .contact-title {
   margin-bottom: 16px;
 }
 
 /* footer*/
+
 .address-link {
   color: var(--color-primery-light);
   font-size: 16px;
