@@ -1,0 +1,14 @@
+@mixin circle($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+/* implamintation 
+
+in css
+
+.circle {
+    @include circle(100px, 100px, white)
+}
+ets
+*/
