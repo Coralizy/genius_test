@@ -28,19 +28,22 @@
   background-color: var(--color-primery-light);
   border-radius: 32px;
   padding: 128px;
-  overflow-y: auto;
 
   &__btn-close {
     position: absolute;
     top: 40px;
     right: 40px;
+    border: none;
+    background-color: transparent;
+    fill: rgba(0, 0, 0, 0);
+    stroke: var(--color-primery-dark);
+    cursor: pointer;
   }
 
   &__form-field {
     margin-bottom: 32px;
   }
   &__button {
-    display: block;
     margin: 0 auto 24px;
   }
 }
