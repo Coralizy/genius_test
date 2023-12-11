@@ -4,7 +4,13 @@
 
   &__container {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
   &__title {
     margin-bottom: 16px;
@@ -14,8 +20,20 @@
   }
   &__map {
     flex-shrink: 0;
+    margin: 0 -24px;
+    height: 176px;
     border: none;
     border-radius: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin: auto;
+      width: 320px;
+      height: 500px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 600px;
+      height: 595px;
+    }
   }
   &__button {
     margin: 0 auto 16px;

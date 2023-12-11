@@ -27,7 +27,11 @@
   max-height: 880px;
   background-color: var(--color-primery-light);
   border-radius: 32px;
-  padding: 128px;
+  padding: 48px;
+
+  @media screen and (min-width: 768px) {
+    padding: 128px;
+  }
 
   &__btn-close {
     position: absolute;
